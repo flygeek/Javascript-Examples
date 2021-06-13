@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  width: 350px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 10px rgb(88, 88, 88, 0.8);
+}
+
+.app h1 {
+  padding-bottom: 20px;
+}
+
+.app p,
+.app input,
+.app button {
+  margin-bottom: 20px;
+}
+
+.app input,
+.app button {
+  width: 100%;
+  height: 30px;
+}
+
+.add {
+  background-color: rgb(88, 88, 88);
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+.remove {
+  background-color: rgb(233, 101, 101);
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.list {
+  margin-top: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.list p {
+  color: red;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.list p span {
+  color: darkblue;
+}
