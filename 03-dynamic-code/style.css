@@ -1,0 +1,21 @@
+* {
+  word-wrap: break-word;
+}
+#html {
+  max-width: 70%;
+}
+#div1 {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  #div1 {
+    position: static;
+    margin: 20px auto;
+  }
+  #html {
+    max-width: 100%;
+  }
+}
