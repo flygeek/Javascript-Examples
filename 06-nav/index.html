@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+    <title>快捷网址导航</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="message">
+        <div class="popFailed"></div>
+        <div class="popSuccess"></div>
+    </div>
+
+    <div class="mask"></div>
+    <form action="/index.html" class="addFormSite">
+        <ul class="formSite">
+            <li class="formTitle">
+                添加收藏
+            </li>
+            <li>
+                <span>网站名称：</span>
+                <input name="siteName" type="text" placeholder="请输入要收藏的网站名称" value="">
+            </li>
+            <li>
+                <span>网站地址：</span>
+                <input name="siteLink" type="text" placeholder="请输入要收藏的网址" value="">
+            </li>
+            <li>
+                <span>快捷键：</span>
+                <input name="siteKey" type="text" placeholder="请输入键盘快捷键（仅支持单按键）" value="">
+            </li>
+            <li>
+                <span>图标类型：</span>
+                <div class="iconsType">
+                    <label for="link">
+                        <input type="radio" id="link" name="siteIconsType" value="link" checked>
+                        <span>logo链接</span>
+                    </label>
+                    <label for="text">
+                        <input type="radio" id="text" name="siteIconsType" value="text">
+                        <span>网址首字母</span>
+                    </label>
+                </div>
+            </li>
+            <li class="siteIconLink">
+                <span>图标链接：</span>
+                <input name="siteIcon" type="text" placeholder="请输入网站 logo 图片地址" value="">
+            </li>
+            <li>
+                <button class="cancelAdd" name="cancel" type="button" onclick="closeForm()">取消</button>
+                <button class="submitAdd" name="submit" type="button" onclick="submitForm()">确认添加</button>
+            </li>
+        </ul>
+    </form>
+
+    <header class="header">
+        <div class="logo">
+            <img src="imgs/logo.png" alt="">
+        </div>
+        <ul class="searchTab">
+            <li class="google" id="searchGoogle">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-google"></use>
+                </svg>
+                谷歌
+            </li>
+            <li class="baidu" id="searchBaidu">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-baidu"></use>
+                </svg>
+                百度
+            </li>
+            <li class="translation" id="searchTrans">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-translation"></use>
+                </svg>
+                翻译
+            </li>
+        </ul>
+        <form action="https://www.google.com/search" class="searchForm" method="GET">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-google"></use>
+            </svg>
+            <input name="q" type="text">
+            <button type="submit">搜索</button>
+        </form>
+    </header>
+
+    <main>
+        <ul class="siteList">
+            <li class="addSite">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-add"></use>
+                </svg>
+                新增网站
+            </li>
+        </ul>
+    </main>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="//at.alicdn.com/t/font_2562475_bg2tohob95f.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
