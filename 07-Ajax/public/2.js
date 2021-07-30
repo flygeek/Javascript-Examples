@@ -1,0 +1,1 @@
+console.log('请求了2.js')
